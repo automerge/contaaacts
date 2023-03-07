@@ -45,7 +45,7 @@ func add(filename: String, name: String, email: String) {
         fatalError("contacts was not a list")
     }
 
-    let lastIndex = try! document.length(obj: contacts)
+    let lastIndex = document.length(obj: contacts)
 
     // Insert a new map for the new contact at the end of the contacts list
     let newContact = try! document.insertObject(obj: contacts, index: lastIndex, ty: .Map)
